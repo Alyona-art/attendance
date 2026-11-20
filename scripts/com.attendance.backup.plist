@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Установка: см. README → Бекапы на Mac. Интервал: каждые 2 дня. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.attendance.backup</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>REPLACE_WITH_FULL_PATH_TO/scripts/backup-from-server.sh</string>
+  </array>
+  <key>StartInterval</key>
+  <integer>172800</integer>
+  <key>RunAtLoad</key>
+  <false/>
+  <key>StandardOutPath</key>
+  <string>REPLACE_WITH_HOME/Library/Logs/attendance-backup.log</string>
+  <key>StandardErrorPath</key>
+  <string>REPLACE_WITH_HOME/Library/Logs/attendance-backup.log</string>
+</dict>
+</plist>
